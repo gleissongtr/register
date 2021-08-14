@@ -1,2 +1,12 @@
 # register
 Project for Builders
+
+Postman exportado para teste:
+https://github.com/gleissongtr/register/blob/main/REGISTER.postman_collection.json
+
+Swagger:
+http://localhost:8080/register/swagger-ui.html
+
+Docker:
+docker build -t springio/register .
+docker run -p 8080:8080 -t springio/register

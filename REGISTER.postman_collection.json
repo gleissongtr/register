@@ -11,13 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/clients",
+					"raw": "http://localhost:8080/register/clients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients"
 					]
 				}
@@ -30,15 +31,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/clients/1",
+					"raw": "http://localhost:8080/register/clients/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients",
-						"1"
+						"5"
 					]
 				}
 			},
@@ -50,13 +52,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/clients/find?findTerm=MA&direction=desc",
+					"raw": "http://localhost:8080/register/clients/find?findTerm=MA&page=0&size=10&direction=desc&orderBy=name",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients",
 						"find"
 					],
@@ -67,13 +70,11 @@
 						},
 						{
 							"key": "page",
-							"value": "0",
-							"disabled": true
+							"value": "0"
 						},
 						{
 							"key": "size",
-							"value": "10",
-							"disabled": true
+							"value": "10"
 						},
 						{
 							"key": "direction",
@@ -81,8 +82,7 @@
 						},
 						{
 							"key": "orderBy",
-							"value": "name",
-							"disabled": true
+							"value": "name"
 						}
 					]
 				}
@@ -95,15 +95,16 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/clients/1",
+					"raw": "http://localhost:8080/register/clients/12",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients",
-						"1"
+						"12"
 					]
 				}
 			},
@@ -124,13 +125,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/clients",
+					"raw": "http://localhost:8080/register/clients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients"
 					]
 				}
@@ -144,7 +146,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"Amarildo José Alterado\",\r\n    \"age\": 37\r\n}",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Amarildo José Alterado\",\r\n    \"age\": 37\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -152,13 +154,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/clients",
+					"raw": "http://localhost:8080/register/clients",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients"
 					]
 				}
@@ -171,13 +174,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/clients/findExample?name=MA",
+					"raw": "http://localhost:8080/register/clients/findExample?name=MA&age=33",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"register",
 						"clients",
 						"findExample"
 					],
@@ -188,8 +192,7 @@
 						},
 						{
 							"key": "age",
-							"value": "33",
-							"disabled": true
+							"value": "33"
 						},
 						{
 							"key": "page",
