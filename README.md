@@ -7,6 +7,12 @@ https://github.com/gleissongtr/register/blob/main/REGISTER.postman_collection.js
 # Swagger:
 http://localhost:8080/register/swagger-ui.html
 
+# Spring Boot run:
+mvn spring-boot:run
+
+# H2:
+http://localhost:8080/register/h2-console
+
 # Docker build:
 docker build -t springio/register .
 
