@@ -1,4 +1,4 @@
-# register
+# Register
 Project for Builders
 
 # Postman exportado para teste:
