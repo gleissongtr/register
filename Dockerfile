@@ -1,5 +1,5 @@
 FROM openjdk:11-jdk
-MAINTAINER Gleicilenio
+LABEL Gleisson GTR
 WORKDIR /app
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} /app/app.jar
